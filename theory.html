@@ -92,6 +92,25 @@ h1 .jp{ display:block; margin-top:4px; font-size:0.7em; font-weight:600; color:v
 }
 
 footer{ padding:40px 16px; text-align:center; color:var(--muted); font-size:11px; border-top: 1px solid var(--line); }
+	.back-index{
+  margin:40px 0 20px;
+  text-align:center;
+}
+.back-index a{
+  display:inline-block;
+  padding:10px 18px;
+  font-size:13px;
+  color:var(--amber);
+  text-decoration:none;
+  border:1px solid var(--line);
+  border-radius:6px;
+  background:var(--panel2);
+}
+.back-index a:hover{
+  background:var(--line);
+}
+
+	
 </style>
 </head>
 <body>
@@ -292,6 +311,9 @@ footer{ padding:40px 16px; text-align:center; color:var(--muted); font-size:11px
   <footer>
     Bar SPEC｜Internal Use Only｜2025 Standard
   </footer>
+<div class="back-index">
+  <a href="index.html">← INDEX に戻る</a>
+</div>
 
 </main>
 
@@ -304,6 +326,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
   });
 });
+	
 </script>
 
 </body>
