@@ -1,0 +1,163 @@
+﻿<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Recipe HUB｜従業員様｜Bar SPEC</title>
+<meta name="description" content="Bar SPEC 従業員様向け 作業レシピ HUB（文字選択）">
+
+<style>
+:root{
+  --bg:#0e0c0a;
+  --panel:#181512;
+  --panel2:#1f1915;
+  --text:#f4ead7;
+  --muted:#c9b89b;
+  --amber:#d7b274;
+  --line:rgba(215,178,116,.18);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP",sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+header{
+  padding:16px 14px 14px;
+  text-align:center;
+  background:linear-gradient(#1c1814,#14110f);
+  border-bottom:1px solid #ffffff22;
+}
+header .ttl{
+  font-weight:700;
+  letter-spacing:.5px;
+}
+header .sub{
+  margin-top:6px;
+  font-size:12px;
+  color:var(--muted);
+}
+main{
+  padding:16px;
+  max-width:680px;
+  margin:0 auto;
+}
+
+/* ===== List ===== */
+.list{
+  margin-top:10px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  overflow:hidden;
+}
+.item{
+  display:block;
+  padding:14px 16px;
+  border-bottom:1px solid var(--line);
+  text-decoration:none;
+  color:inherit;
+  background:var(--panel);
+}
+.item:last-child{border-bottom:none}
+.item:hover{background:var(--panel2)}
+
+.itemTitle{
+  font-size:16px;
+  color:var(--amber);
+  margin:0 0 4px;
+}
+.itemMeta{
+  font-size:12px;
+  color:var(--muted);
+  line-height:1.6;
+}
+
+/* ===== Section title ===== */
+.sectionTitle{
+  margin:20px 0 8px;
+  font-size:14px;
+  color:#e6d3a3;
+  letter-spacing:.3px;
+}
+
+/* ===== Footer ===== */
+footer{
+  padding:22px 16px;
+  text-align:center;
+  color:var(--muted);
+  font-size:12px;
+}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="ttl">Recipe HUB｜従業員様</div>
+  <div class="sub">Bar SPEC｜作業レシピ一覧（業務用）</div>
+</header>
+
+<main>
+
+  <div class="sectionTitle">📚 理論・マニュアル</div>
+  <div class="list">
+    <a href="theory.html" class="item">
+      <div class="itemTitle">Employee Handbook</div>
+      <div class="itemMeta">
+        基礎理論｜3：1：1の方程式｜技法別心得（Build/Shake/Stir）
+      </div>
+    </a>
+  </div>
+
+  <div class="sectionTitle">🌟 シグネチャー / スペシャル</div>
+  <div class="list">
+    <a href="old-fashioned.html" class="item">
+      <div class="itemTitle">Old Fashioned</div>
+      <div class="itemMeta">
+        ロック｜SPECスタンダード｜判断不要
+      </div>
+    </a>
+
+    <a href="coffee-martini.html" class="item">
+      <div class="itemTitle">Coffee martini</div>
+      <div class="itemMeta">
+        シェイク｜シグネチャー｜デザート寄り
+      </div>
+    </a>
+  </div>
+
+  <div class="sectionTitle">🍸 スタンダード（基礎）</div>
+  <div class="list">
+    
+    <a href="theory.html#recipes" class="item">
+      <div class="itemTitle">Short Sour (3:1:1 Formula)</div>
+      <div class="itemMeta">
+        シェイク｜ホワイトレディ / サイドカー / XYZ / バラライカ / マルガリータ
+      </div>
+    </a>
+
+    <a href="theory.html#recipes" class="item">
+      <div class="itemTitle">Classic Stir Cocktails</div>
+      <div class="itemMeta">
+        ステア｜マティーニ / マンハッタン / ネグローニ
+      </div>
+    </a>
+
+    <a href="theory.html#recipes" class="item">
+      <div class="itemTitle">Long & Build</div>
+      <div class="itemMeta">
+        ビルド｜モスコーミュール / ソルティドッグ / 他
+      </div>
+    </a>
+
+  </div>
+
+</main>
+
+<footer>
+  ※ 本ページは従業員様向け内部資料です。<br>
+  詳細は各レシピページを参照してください。
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,260 @@
+﻿<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>作業レシピ｜従業員様｜Bar SPEC</title>
+<meta name="description" content="Bar SPEC 従業員様向け 作業レシピ（カクテル）">
+
+<style>
+:root{
+  --bg:#0e0c0a;
+  --panel:#181512;
+  --panel2:#1f1915;
+  --text:#f4ead7;
+  --muted:#c9b89b;
+  --amber:#d7b274;
+  --line:rgba(215,178,116,.18);
+  --ok:#8fd19e;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP",sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+header{
+  position:sticky;top:0;z-index:10;
+  padding:16px 14px 14px;
+  text-align:center;
+  background:linear-gradient(#1c1814,#14110f);
+  border-bottom:1px solid #ffffff22;
+}
+header .ttl{
+  font-weight:700;
+  letter-spacing:.5px;
+}
+header .sub{
+  margin-top:6px;
+  font-size:12px;
+  color:var(--muted);
+}
+main{padding:16px;max-width:980px;margin:0 auto}
+
+.hero{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:14px;
+}
+@media(min-width:900px){
+  .hero{grid-template-columns: 1.05fr .95fr; align-items:start;}
+}
+
+.card{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:16px;
+}
+h1{
+  margin:0 0 8px;
+  font-size:20px;
+  color:var(--amber);
+}
+.badges{
+  display:flex;flex-wrap:wrap;gap:8px;
+  margin:10px 0 0;
+}
+.badge{
+  font-size:12px;
+  padding:6px 10px;
+  border-radius:999px;
+  background:var(--panel2);
+  border:1px solid var(--line);
+  color:var(--muted);
+}
+.badge.ok{color:#001b0b;background:var(--ok);border:none;font-weight:700}
+
+.imgWrap{
+  overflow:hidden;
+  border-radius:14px;
+  border:1px solid var(--line);
+  background:#000;
+}
+.imgWrap img{
+  width:100%;
+  display:block;
+}
+
+.sectionTitle{
+  margin:18px 0 10px;
+  font-size:14px;
+  color:#e6d3a3;
+  letter-spacing:.3px;
+}
+.table{
+  width:100%;
+  border-collapse:separate;
+  border-spacing:0;
+  overflow:hidden;
+  border-radius:14px;
+  border:1px solid var(--line);
+}
+.table th, .table td{
+  padding:12px 12px;
+  border-bottom:1px solid var(--line);
+  vertical-align:top;
+  font-size:14px;
+}
+.table th{
+  width:42%;
+  background:var(--panel2);
+  color:var(--muted);
+  font-weight:600;
+}
+.table tr:last-child th, .table tr:last-child td{border-bottom:none}
+
+.steps{
+  margin:0;
+  padding-left:18px;
+  line-height:1.75;
+  color:var(--text);
+}
+.note{
+  margin-top:10px;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.7;
+}
+.callout{
+  margin-top:12px;
+  padding:12px 12px;
+  border-radius:14px;
+  background:rgba(215,178,116,.08);
+  border:1px dashed rgba(215,178,116,.35);
+  color:var(--text);
+  line-height:1.7;
+  font-size:13px;
+}
+hr.sep{
+  border:none;
+  border-top:1px solid var(--line);
+  margin:18px 0;
+}
+
+.small{
+  font-size:12px;color:var(--muted);line-height:1.6
+}
+
+footer{
+  padding:22px 16px;
+  text-align:center;
+  color:var(--muted);
+  font-size:12px;
+}
+.backLink{
+  display:inline-block;
+  margin-bottom:14px;
+  font-size:13px;
+  color:var(--muted);
+  text-decoration:none;
+}
+.backLink:hover{
+  color:var(--amber);
+}
+	
+</style>
+</head>
+
+<body>
+<header>
+  <div class="ttl">作業レシピ（従業員様）｜Bar SPEC</div>
+  <div class="sub">計量・手順を統一して、味の再現性を担保します</div>
+</header>
+
+<main>
+<a href="index.html" class="backLink">← Recipe HUBに戻る</a>
+
+<section class="hero">
+  <div class="card">
+    <h1>Coffee Martini　コーヒーマティーニ</h1>
+    <div class="small">※名称は暫定。現場で確定した名称に置き換えてください。</div>
+
+    <div class="badges">
+      <span class="badge ok">シェイク提供</span>
+      <span class="badge">コーヒー系</span>
+      <span class="badge">デザート寄り</span>
+      <span class="badge">再現性重視</span>
+    </div>
+
+    <div class="sectionTitle">レシピ（1杯）</div>
+    <table class="table" aria-label="recipe">
+      <tr><th>カルア</th><td><strong>15ml</strong></td></tr>
+      <tr><th>セントナリオ</th><td><strong>10ml</strong></td></tr>
+      <tr><th>ジェムソン</th><td><strong>15ml</strong></td></tr>
+      <tr><th>コーヒースミノフ</th><td><strong>5ml</strong></td></tr>
+      <tr><th>杜氏が入れたコーヒー</th><td><strong>30ml</strong></td></tr>
+    </table>
+
+    <div class="sectionTitle">作り方</div>
+    <ol class="steps">
+      <li>シェーカーに氷を<strong>8〜9分目</strong>まで入れる。</li>
+      <li>材料をすべて<strong>計量して</strong>投入する。</li>
+      <li><strong>12〜15秒</strong>しっかりシェイク（泡立ちを作る）。</li>
+      <li>冷やしたカクテルグラスにストレインする。</li>
+      <li>コーヒー豆を1粒（中央）で仕上げ、提供。</li>
+    </ol>
+
+    <div class="callout">
+      <strong>運用ルール</strong><br>
+      ・本レシピは<strong>必ず計量</strong>（「適量」は禁止）<br>
+      ・差異が出た場合は、氷量／シェイク時間／コーヒー温度（冷却）を優先的に確認
+    </div>
+
+    <hr class="sep">
+
+    <div class="sectionTitle">提供</div>
+    <table class="table" aria-label="serve">
+      <tr><th>グラス</th><td>カクテルグラス（ノーアイス）</td></tr>
+      <tr><th>ガーニッシュ</th><td>コーヒー豆 1粒（中央）</td></tr>
+      <tr><th>味の目安</th><td>甘み：中／香り：強／余韻：コーヒー主体</td></tr>
+    </table>
+
+    <div class="note">
+      <strong>微調整（必要時のみ）</strong><br>
+      ・甘さを抑える：カルア 10ml<br>
+      ・ウイスキー感：ジェムソン 20ml（カルア 12.5ml）<br>
+      ※調整を行った場合は必ず共有（勝手に固定しない）
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="sectionTitle">参考写真</div>
+    <div class="imgWrap">
+      <!-- 画像ファイル名は任意。運用に合わせて差し替え可 -->
+     <img src="images/coffee-cocktail.jpg" alt="コーヒーシェイクドカクテルの参考写真">
+    </div>
+    <div class="note">
+      ※本HTMLと同じ階層にある「images」フォルダ内に画像を配置してください。<br>
+        </div>
+
+    <hr class="sep">
+
+    <div class="sectionTitle">チェックポイント（品質）</div>
+    <table class="table" aria-label="quality">
+      <tr><th>フォーム</th><td>きめ細かい泡が均一（荒い泡はシェイク不足）</td></tr>
+      <tr><th>温度</th><td>しっかり冷えている（シェーカー外側が冷えるまで）</td></tr>
+      <tr><th>香り</th><td>コーヒーが立つ（酸味が強い場合は抽出条件を確認）</td></tr>
+      <tr><th>見た目</th><td>表面はフラット、コーヒー豆1粒がセンター</td></tr>
+    </table>
+  </div>
+</section>
+
+<footer>
+  Bar SPEC｜従業員様向け 作業レシピ（内部用）
+</footer>
+
+</main>
+</body>
+</html>

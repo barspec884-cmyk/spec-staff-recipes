@@ -1,0 +1,310 @@
+﻿<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bar SPEC｜従業員ハンドブック</title>
+<style>
+:root{
+  /* 基本テーマ */
+  --bg:#0e0c0a; --panel:#181512; --panel2:#1f1915;
+  --text:#f4ead7; --muted:#c9b89b; --amber:#d7b274;
+  --line:rgba(215,178,116,.18);
+
+  /* 技法別イメージカラー（視認性向上用） */
+  --build: #8fd19e; /* 緑：フレッシュ・直接的 */
+  --shake: #82ccdd; /* 水色：冷気・空気 */
+  --stir: #a29bfe;  /* 紫：滑らか・静謐 */
+}
+*{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+body{
+  margin:0; font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP",sans-serif;
+  background:var(--bg); color:var(--text); line-height:1.6;
+}
+
+/* Header & Nav */
+header{
+  position:sticky; top:0; z-index:100;
+  padding:16px; text-align:center;
+  background:linear-gradient(#1c1814,#14110f);
+  border-bottom:1px solid #ffffff22;
+}
+header .ttl{ font-weight:700; letter-spacing:1px; color:var(--amber); }
+nav {
+  display: flex; justify-content: center; gap: 10px; padding: 10px;
+  background: var(--panel2); border-bottom: 1px solid var(--line);
+}
+nav a {
+  font-size: 12px; color: var(--muted); text-decoration: none;
+  padding: 6px 12px; border-radius: 4px; border: 1px solid var(--line);
+}
+nav a:hover { background: var(--line); color: var(--amber); }
+
+main{ padding:16px; max-width:1000px; margin:0 auto; }
+
+/* Sections */
+section { margin-bottom: 40px; scroll-margin-top: 120px; }
+h2.section-header {
+  font-size: 18px; color: var(--amber); border-left: 4px solid var(--amber);
+  padding-left: 12px; margin: 0 0 20px; text-transform: uppercase; letter-spacing: 1px;
+}
+
+.card{
+  background:var(--panel); border:1px solid var(--line);
+  border-radius:16px; padding:20px; margin-bottom: 16px;
+}
+
+/* Theory Styles */
+.formula-box {
+  background: var(--panel2); padding: 15px; border-radius: 12px;
+  margin: 15px 0; border: 1px dashed var(--amber);
+}
+.ratio { display: flex; align-items: center; justify-content: center; gap: 8px; font-weight: 700; color: var(--amber); }
+.ratio span { font-size: 12px; color: var(--muted); font-weight: 400; }
+
+/* 技法別バッジ */
+.badges{ display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px; }
+.badge{ font-size:11px; padding:3px 8px; border-radius:4px; color:#000; font-weight:700; }
+.badge.build { background: var(--build); }
+.badge.shake { background: var(--shake); }
+.badge.stir  { background: var(--stir); }
+.badge.tag   { background: var(--panel2); color: var(--muted); border: 1px solid var(--line); font-weight: 400; }
+
+/* Recipe Styles */
+h1 { margin:0 0 12px; font-size:22px; line-height:1.2; color:var(--amber); }
+h1 .jp{ display:block; margin-top:4px; font-size:0.7em; font-weight:600; color:var(--muted); letter-spacing: 0.05em; }
+
+.table{ width:100%; border-collapse:collapse; margin-bottom: 15px; }
+.table th, .table td{ padding:10px; border-bottom:1px solid var(--line); font-size:14px; text-align: left; }
+.table th{ color:var(--muted); font-weight:500; width: 45%; }
+.table td strong { color: var(--amber); }
+
+.steps { padding-left: 18px; margin: 0; font-size: 14px; }
+.steps li { margin-bottom: 8px; }
+
+/* Grid for Recipes */
+.recipe-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;
+}
+
+@media(max-width:600px){
+  .recipe-grid { grid-template-columns: 1fr; }
+}
+
+footer{ padding:40px 16px; text-align:center; color:var(--muted); font-size:11px; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="ttl">Bar SPEC EMPLOYEE HANDBOOK</div>
+</header>
+
+<nav>
+  <a href="#theory">📚 基礎理論</a>
+  <a href="#method">🛠 技法</a>
+  <a href="#recipes">🍸 レシピ一覧</a>
+</nav>
+
+<main>
+
+  <section id="theory">
+    <h2 class="section-header">📚 基礎理論：カクテルの方程式</h2>
+    <div class="card">
+      <div class="formula-box">
+        <strong>1. ショート・サワー型（方程式 3：1：1）</strong>
+        <div class="ratio">ベース 30〜45ml <span>+</span> ホワイトキュラソー 15ml <span>+</span> レモン 15ml</div>
+        <p style="font-size:13px; margin-top:10px; line-height: 1.8;">
+          ・ベースが <strong>ジン</strong> ＝ <strong>ホワイト・レディ</strong><br>
+          ・ベースが <strong>ブランデー</strong> ＝ <strong>サイドカー</strong><br>
+          ・ベースが <strong>ラム</strong> ＝ <strong>Ｘ.Ｙ.Ｚ</strong><br>
+          ・ベースが <strong>ウォッカ</strong> ＝ <strong>バラライカ</strong><br>
+          ・ベースが <strong>テキーラ</strong> ＝ <strong>マルガリータ</strong>（※塩あり）
+        </p>
+      </div>
+
+      <div class="formula-box" style="border-color: var(--build);">
+        <strong>2. ロング・ビルド型</strong>
+        <div class="ratio">ベース 45ml <span>+</span> 割り材 Full up <span>+</span> (柑橘)</div>
+        <p style="font-size:12px; margin-top:10px;">
+          ・ソーダ割り ＝ <strong>ハイボール / リッキー</strong><br>
+          ・トニック割り ＝ <strong>ジントニック</strong><br>
+          ・ジンジャーエール ＝ <strong>バック / ミュール</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="method">
+    <h2 class="section-header">🛠 技法の心得</h2>
+    <div class="recipe-grid">
+      <div class="card" style="border-top: 4px solid var(--build);">
+        <strong style="color:var(--build)">ビルド【Build】</strong>
+        <p style="font-size:13px; color:var(--muted);">
+          グラスの中で完成させる。氷の角を取り、液体を冷やす「準備」が味の8割。炭酸は氷に当てない。
+        </p>
+      </div>
+      <div class="card" style="border-top: 4px solid var(--shake);">
+        <strong style="color:var(--shake)">シェイク【Shake】</strong>
+        <p style="font-size:13px; color:var(--muted);">
+          混和・冷却・空気。コーヒーマティーニ等は、きめ細かな泡（フォーム）が表面を覆うまでしっかり振る。
+        </p>
+      </div>
+      <div class="card" style="border-top: 4px solid var(--stir);">
+        <strong style="color:var(--stir)">ステア【Stir】</strong>
+        <p style="font-size:13px; color:var(--muted);">
+          氷を溶かさず冷やす。バースプーンを滑らかに回し、酒の角を取って「シルク」のような口当たりにする。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="recipes">
+    <h2 class="section-header">🍸 レシピ一覧</h2>
+    <div class="recipe-grid">
+
+      <div class="card">
+        <h1>White Lady<span class="jp">ホワイト・レディ</span></h1>
+        <div class="badges"><span class="badge shake">Shake</span><span class="badge tag">Short</span></div>
+        <table class="table">
+          <tr><th>ドライ・ジン</th><td><strong>30ml</strong></td></tr>
+          <tr><th>ホワイトキュラソー</th><td><strong>15ml</strong></td></tr>
+          <tr><th>レモンジュース</th><td><strong>15ml</strong></td></tr>
+        </table>
+        <ol class="steps">
+          <li>材料をシェーカーに入れ、鋭くシェイク。</li>
+          <li>冷やしたカクテルグラスに注ぐ。</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h1>Sidecar<span class="jp">サイドカー</span></h1>
+        <div class="badges"><span class="badge shake">Shake</span><span class="badge tag">Short</span></div>
+        <table class="table">
+          <tr><th>ブランデー</th><td><strong>30ml</strong></td></tr>
+          <tr><th>ホワイトキュラソー</th><td><strong>15ml</strong></td></tr>
+          <tr><th>レモンジュース</th><td><strong>15ml</strong></td></tr>
+        </table>
+        <ol class="steps">
+          <li>シェイクして注ぐ。</li>
+          <li>ブランデーの芳醇さを殺さないよう、温度管理を徹底。</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h1>X.Y.Z<span class="jp">エックス・ワイ・ジー</span></h1>
+        <div class="badges"><span class="badge shake">Shake</span><span class="badge tag">Short</span></div>
+        <table class="table">
+          <tr><th>ホワイト・ラム</th><td><strong>30ml</strong></td></tr>
+          <tr><th>ホワイトキュラソー</th><td><strong>15ml</strong></td></tr>
+          <tr><th>レモンジュース</th><td><strong>15ml</strong></td></tr>
+        </table>
+        <ol class="steps">
+          <li>「これ以上はない」究極の意。バランスが全て。</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h1>Balalaika<span class="jp">バラライカ</span></h1>
+        <div class="badges"><span class="badge shake">Shake</span><span class="badge tag">Short</span></div>
+        <table class="table">
+          <tr><th>ウォッカ</th><td><strong>30ml</strong></td></tr>
+          <tr><th>ホワイトキュラソー</th><td><strong>15ml</strong></td></tr>
+          <tr><th>レモンジュース</th><td><strong>15ml</strong></td></tr>
+        </table>
+        <ol class="steps">
+          <li>無味無臭のウォッカがベースのため、キュラソーの質が問われる。</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h1>Margarita<span class="jp">マルガリータ</span></h1>
+        <div class="badges"><span class="badge shake">Shake</span><span class="badge tag">Snow Style</span></div>
+        <table class="table">
+          <tr><th>テキーラ</th><td><strong>30ml</strong></td></tr>
+          <tr><th>ホワイトキュラソー</th><td><strong>15ml</strong></td></tr>
+          <tr><th>レモンジュース</th><td><strong>15ml</strong></td></tr>
+        </table>
+        <ol class="steps">
+          <li>グラスの縁に塩を付ける（スノースタイル）。</li>
+          <li>シェイクした材料を、塩を崩さないよう静かに注ぐ。</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h1>Moscow Mule<span class="jp">モスコー・ミュール</span></h1>
+        <div class="badges"><span class="badge build">Build</span><span class="badge tag">Long</span></div>
+        <table class="table">
+          <tr><th>ウォッカ</th><td><strong>45ml</strong></td></tr>
+          <tr><th>ライムJ</th><td><strong>15ml</strong></td></tr>
+          <tr><th>ジンジャーE</th><td><strong>Full up</strong></td></tr>
+        </table>
+        <ol class="steps">
+          <li>氷を入れたグラスに酒とライムを注ぐ。</li>
+          <li>冷えたジンジャーエールを静かに満たす。</li>
+        </ol>
+      </div>
+     <div class="card">
+        <h1>Martini<span class="jp">マティーニ</span></h1>
+  <div class="badges"><span class="badge stir">Stir</span><span class="badge tag">Short</span></div>
+  <table class="table">
+    <tr><th>ドライ・ジン</th><td><strong>45ml</strong></td></tr>
+    <tr><th>ドライ・ベルモット</th><td><strong>15ml</strong></td></tr>
+  </table>
+  <ol class="steps">
+    <li>ミキシンググラスで静かに、かつ十分に冷えるまでステア。</li>
+    <li>冷やしたグラスに注ぎ、<strong>オリーブ</strong>を添える。</li>
+    <li>仕上げに<strong>レモンピール</strong>を絞り、香りを纏わせる。</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h1>Manhattan<span class="jp">マンハッタン</span></h1>
+  <div class="badges"><span class="badge stir">Stir</span><span class="badge tag">Short</span></div>
+  <table class="table">
+    <tr><th>ウイスキー</th><td><strong>45ml</strong></td></tr>
+    <tr><th>スイート・ベルモット</th><td><strong>15ml</strong></td></tr>
+    <tr><th>アンゴスチュラビターズ</th><td><strong>1dash</strong></td></tr>
+  </table>
+  <ol class="steps">
+    <li>材料をステアし、ベルモットの甘みと酒を一体化させる。</li>
+    <li>グラスに注いだ後、必ず<strong>レッド・チェリー</strong>を1粒沈める。</li>
+    <li>お好みでレモンピールを軽く絞り、華やかさを加える。</li>
+  </ol>
+</div>
+      <div class="card">
+        <h1>Negroni<span class="jp">ネグローニ</span></h1>
+        <div class="badges"><span class="badge stir">Stir</span><span class="badge tag">Rock</span></div>
+        <table class="table">
+          <tr><th>ドライ・ジン</th><td><strong>20ml</strong></td></tr>
+          <tr><th>スイート・ベルモット</th><td><strong>20ml</strong></td></tr>
+          <tr><th>カンパリ</th><td><strong>20ml</strong></td></tr>
+        </table>
+        <ol class="steps">
+          <li>氷を入れたグラス（またはミキシンググラス）でステア。</li>
+          <li>比重の重い材料が多いため、しっかり混ぜ合わせる。</li>
+          <li>オレンジピールを絞ると香りが一層引き立つ。</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Bar SPEC｜Internal Use Only｜2025 Standard
+  </footer>
+
+</main>
+
+<script>
+document.querySelectorAll('nav a').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+</script>
+
+</body>
+</html>
